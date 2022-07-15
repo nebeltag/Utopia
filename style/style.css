@@ -4,111 +4,42 @@
   font-weight: 400;
   font-style: normal;
 }
-
 @font-face {
   font-family: Manrope;
   src: url(../fonts/Manrope-Medium.ttf);
   font-weight: 500;
   font-style: normal;
 }
-
 @font-face {
   font-family: Manrope;
   src: url(../fonts/Manrope-SemiBold.ttf);
   font-weight: 600;
   font-style: normal;
 }
-
 @font-face {
   font-family: Manrope;
   src: url(../fonts/Manrope-Bold.ttf);
   font-weight: 700;
   font-style: normal;
 }
-
 @font-face {
   font-family: Manrope;
   src: url(../fonts/Manrope-ExtraBold.ttf);
   font-weight: 800;
   font-style: normal;
 }
-
 @font-face {
   font-family: Manrope;
   src: url(../fonts/GraphikLCG-SemiboldItalic.ttf);
   font-weight: 600;
   font-style: italic;
 }
-
-%section-title-txt {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 52px;
-  text-align: center;
-  color: #3C3F34;
-}
-
-%section-text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  color: #3C3F34;
-}
-
-%download-btn-txt {
+.page-button {
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
   line-height: 22px;
   color: #FFFFFF;
-}
-
-%card-title-txt {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 28px;
-  text-align: center;
-  color: #FFFFFF;
-}
-
-%card-text {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 22px;
-  text-align: center;
-  color: #FFFFFF;
-}
-
-
-%big-card-title-txt {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 25px;
-  line-height: 35px;
-  text-align: center;
-  color: #FFFFFF;
-}
-
-%big-card-text {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 28px;
-  text-align: center;
-  color: #FFFFFF;
-}
-
-@mixin fontz($fst, $fwt, $fsz, $lht, $taln, $clr) {
-  font-style: $fst;
-  font-weight: $fwt;
-  font-size: $fsz;
-  line-height: $lht;
-  text-align: $taln;
-  color: $clr;
 }
 
 * {
@@ -117,7 +48,7 @@
 }
 
 .body {
-  font-family: 'Manrope';
+  font-family: "Manrope";
   background-color: #E5E5E5;
 }
 
@@ -151,12 +82,16 @@ a {
 }
 
 #menuLink {
-  @include fontz(normal, 500, 17px, 23px, center, #3C3F34);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 23px;
+  text-align: center;
+  color: #3C3F34;
   padding: 4px 6px;
 }
 
 .page-button {
-  @extend %download-btn-txt;
   font-weight: 500;
   color: #3C3F34;
   padding: 14px 35px;
@@ -168,4 +103,4 @@ a {
 
 #menuLink:focus {
   border-bottom: 2px solid #87B670;
-}
+}/*# sourceMappingURL=style.css.map */
