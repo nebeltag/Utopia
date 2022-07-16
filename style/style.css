@@ -73,8 +73,29 @@ a {
   padding: 8px 0;
 }
 
+.bg-light-custom {
+  background-color: transparent !important;
+}
+
+.container-fluid-custom {
+  padding: 0;
+}
+
 .logo {
   margin: 0;
+}
+
+.logo img {
+  transition: all 0.1s ease-in-out;
+}
+
+.logo img:hover {
+  filter: opacity(0.5);
+}
+
+.logo img:active {
+  filter: opacity(1);
+  transform: scale(0.95);
 }
 
 .menu-list {
@@ -89,6 +110,7 @@ a {
   text-align: center;
   color: #3C3F34;
   padding: 4px 6px;
+  transition: all 0.1s ease-in-out;
 }
 
 .page-button {
@@ -99,8 +121,20 @@ a {
 
 #menuLink:hover {
   border-bottom: 2px solid #87B670;
+  color: #87B670;
+}
+
+#menuLink:active {
+  color: #3C3F34;
+  transform: scale(0.95);
 }
 
 #menuLink:focus {
   border-bottom: 2px solid #87B670;
+}
+
+@media (min-width: 1200px) {
+  .page-container {
+    max-width: 1244px;
+  }
 }/*# sourceMappingURL=style.css.map */
