@@ -57,6 +57,18 @@
   color: #3C3F34;
 }
 
+%download-btn {
+  width: 100%;
+  max-width: 306px;
+  padding: 14px 0;
+  // @extend %download-btn-txt;
+  background: linear-gradient(98.8deg, #97BC5D 0.78%, #C0D997 98.41%);
+  box-shadow: 0px 10px 30px rgba(135, 182, 112, 0.3);
+  border-radius: 9px;
+  border-color: transparent;
+  transition: all .1s ease-in-out
+}
+
 %download-btn-txt {
   font-style: normal;
   font-weight: 500;
@@ -126,12 +138,15 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin: 0;
 }
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -199,13 +214,20 @@ a {
   border-bottom: 2px solid #87B670;
 }
 
+.body-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 .page-banner {
   width: 100%;
   padding: 136px 0 0 0;
   min-height: 625px;
   background-image: url(../img/mcbook-circles.png);
   background-repeat: no-repeat;
-  background-position: right 0px top -78px;
+  background-position: right -17px top -78px;
+  margin: 0 0 86px 0;
 }
 
 .banner-question {
@@ -257,6 +279,205 @@ a {
   filter: opacity(1);
   transform: scale(.95);
 }
+
+.utopia_tools {
+  margin: 0 0 140px 0;
+}
+
+.utopia_tools-title {
+  width: 100%;
+  @extend %section-title-txt;
+  margin: 0 0 87px 0;
+}
+
+.utopia_tools-list {
+  width: 100%;
+  margin: 0 0 53px 0;
+}
+
+.utopia_tools-list2 {
+  width: 100%;
+  margin: 0 0 100px 0;
+}
+
+.tools-list-item {
+  width: 100%;
+  max-width: 238px;
+  min-height: 210px;
+  margin: 0 auto;
+}
+
+.tools-item-img {
+  width: 103px;
+  height: 103px;
+  display: flex;
+  border-radius: 50%;
+  margin: 0 auto 25px;
+  box-shadow: 0px 10px 30px rgba(162, 162, 162, 0.25);
+}
+
+.tools-item-img img {
+  display: block;
+  width: 62px;
+  height: 62px;
+  margin: auto;
+}
+
+
+.tools-item-title {
+  @extend %big-card-text;
+  color: #3C3F34;
+  margin: 0 0 10px 0;
+}
+
+.tools-item-txt {
+  @extend %card-text;
+  color: #3C3F34;
+  font-weight: 400;
+  padding: 0 8px;
+}
+
+.tools-list-item2 {
+  width: 100%;
+  max-width: 334px;
+  min-height: 210px;
+  margin: 0 auto;
+}
+
+.utopia-tools-btn {
+  width: 100%;
+  max-width: 306px;
+  padding: 14px 0;
+  // @extend %download-btn-txt;
+  background: linear-gradient(98.8deg, #97BC5D 0.78%, #C0D997 98.41%);
+  box-shadow: 0px 10px 30px rgba(135, 182, 112, 0.3);
+  border-radius: 9px;
+  border-color: transparent;
+  transition: all .1s ease-in-out;
+}
+
+.utopia-tools-btn a {
+  @extend %download-btn-txt;
+}
+
+.utopia-tools-btn:hover {
+  filter: opacity(.85);
+}
+
+.utopia-tools-btn:active {
+  filter: opacity(1);
+  transform: scale(.95);
+}
+
+
+
+.utopia-problem-title {
+  @extend %section-title-txt;
+  margin: 0 0 150px 0;
+}
+
+.problem-list {
+  position: relative;
+  padding: 0 .75rem;
+}
+
+.problem-card {
+  width: 100%;
+  max-width: 394px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 42px 0;
+  border-radius: 35px;
+  background: linear-gradient(98.8deg, #97BC5D 0.78%, #C0D997 98.41%);
+  // margin-right: -38px;
+
+  .problem-img-wrp {
+    width: 95px;
+    height: 95px;
+    display: flex;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 30px rgba(162, 162, 162, 0.25);
+    margin: 0 0 25px 0;
+  }
+
+  .problem-img-wrp img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+  }
+
+  .problem-card-title {
+    width: 100%;
+    @extend %card-title-txt;
+    margin: 0 0 10px 0;
+  }
+
+  .problem-card-txt {
+    width: 100%;
+    max-width: 291px;
+    @extend %card-text;
+  }
+}
+
+// #left {
+//   margin-right: -38px;
+// }
+
+// #right {
+//   margin-left: -38px;
+//   float: left;
+// }
+
+
+
+.problem-card-big {
+  width: 100%;
+  max-width: 489px;
+  min-height: 350px;
+  display: flex;
+  position: absolute;
+  top: -64px;
+  left: 369px;
+  flex-direction: column;
+  align-items: center;
+  padding: 42px 0;
+  border-radius: 35px;
+  background: linear-gradient(98.8deg, #97BC5D 0.78%, #C0D997 98.41%);
+
+  .problem-img-big-wrp {
+    width: 103px;
+    height: 103px;
+    display: flex;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 30px rgba(162, 162, 162, 0.25);
+    margin: 0 0 27px 0;
+  }
+
+  .problem-img-big-wrp img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+  }
+
+  .big-card-title {
+    width: 100%;
+    @extend %big-card-title-txt;
+    margin: 0 0 10px 0;
+  }
+
+  .big-card-txt {
+    width: 100%;
+    max-width: 270px;
+    @extend %big-card-text;
+  }
+}
+
+
 
 
 
