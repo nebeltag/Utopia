@@ -440,6 +440,10 @@ a {
   }
 }
 
+#left>p {
+  max-width: 251px;
+}
+
 // #left {
 //   margin-right: -38px;
 // }
@@ -494,6 +498,8 @@ a {
     @extend %big-card-text;
   }
 }
+
+
 
 
 
