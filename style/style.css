@@ -374,6 +374,11 @@ a {
 
 .utopia-problem {
   margin: 0 0 141px 0;
+  background-image: url(../img/circles-green_internet.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 24px;
+  background-position-y: 6px;
 }
 
 .utopia-problem-title {
@@ -532,6 +537,99 @@ a {
   background-image: url(../img/laptop.png);
   background-repeat: no repeat;
   background-size: cover;
+}
+
+.utopia-comunity {
+  width: 100%;
+  min-height: 480px;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.utopia-comunity::before {
+  content: "";
+  display: block;
+  width: 360px;
+  height: 660px;
+  background-image: url(../img/big-circles-left.png);
+  position: absolute;
+  left: 0;
+  top: -367px;
+  z-index: -1;
+}
+
+.comunity-background {
+  width: 100%;
+  max-width: 1320px;
+  min-height: 480px;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 35px;
+  background-image: url(../img/two_girls.png);
+  margin: 0 0 146px 0;
+}
+
+.utopia-comunity-info {
+  width: 100%;
+  max-width: 776px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #F7F8F3;
+  border-radius: 35px;
+  padding: 0 0 0 70px;
+  box-sizing: border-box;
+}
+
+.comunity-2 {
+  margin: 0 0 84px 0;
+  padding: 0 0 82px 0;
+  background-image: url(../img/dots-right.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.comunity-list {
+  margin: 0 0 90px 0;
+}
+
+.comunity-item {
+  padding: 0 50px 0 0;
+}
+
+.circle-box {
+  width: 100%;
+}
+
+.circle-box::after {
+  content: "";
+  display: block;
+  max-width: 350px;
+  height: 5px;
+  background: linear-gradient(98.8deg, #97BC5D 0.78%, #C0D997 98.41%);
+  border-radius: 100px;
+  margin: 5px 0 0 0;
+}
+
+.users-number {
+  display: block;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #3C3F34;
+  margin: 50px 0 0 0;
+}
+
+.users-txt {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #3C3F34;
+  padding-right: 115px;
+  box-sizing: border-box;
 }
 
 @media (min-width: 1200px) {
