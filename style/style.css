@@ -397,6 +397,10 @@ a {
   max-width: 291px;
 }
 
+#left > p {
+  max-width: 251px;
+}
+
 .problem-card-big {
   width: 100%;
   max-width: 489px;
