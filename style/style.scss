@@ -105,6 +105,15 @@
   color: #FFFFFF;
 }
 
+%big-card2-title-txt {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  color: #3C3F34;
+}
+
 %big-card-text {
   font-style: normal;
   font-weight: 500;
@@ -112,6 +121,15 @@
   line-height: 28px;
   text-align: center;
   color: #FFFFFF;
+}
+
+%big-card2-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #3C3F34;
 }
 
 @mixin fontz($fst, $fwt, $fsz, $lht, $taln, $clr) {
@@ -216,7 +234,7 @@ a {
 
 .body-container {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -227,7 +245,7 @@ a {
   background-image: url(../img/mcbook-circles.png);
   background-repeat: no-repeat;
   background-position: right -17px top -78px;
-  margin: 0 0 86px 0;
+  // margin: 0 0 86px 0;
 }
 
 .banner-question {
@@ -282,6 +300,7 @@ a {
 
 .utopia_tools {
   margin: 0 0 140px 0;
+  padding: 86px 0 0 0;
   position: relative;
   background-image: url(/img/half-circles.png);
   background-repeat: no-repeat;
@@ -299,7 +318,7 @@ a {
   background-size: cover;
   position: absolute;
   left: 0;
-  top: -80px;
+  top: 0;
 }
 
 .utopia_tools-title {
@@ -387,7 +406,9 @@ a {
   transform: scale(.95);
 }
 
-
+.utopia-problem {
+  margin: 0 0 141px 0
+}
 
 .utopia-problem-title {
   @extend %section-title-txt;
@@ -468,37 +489,115 @@ a {
   padding: 42px 0;
   border-radius: 35px;
   background: linear-gradient(98.8deg, #97BC5D 0.78%, #C0D997 98.41%);
-
-  .problem-img-big-wrp {
-    width: 103px;
-    height: 103px;
-    display: flex;
-    border-radius: 50%;
-    background: #FFFFFF;
-    box-shadow: 0px 10px 30px rgba(162, 162, 162, 0.25);
-    margin: 0 0 27px 0;
-  }
-
-  .problem-img-big-wrp img {
-    display: block;
-    width: 50px;
-    height: 50px;
-    margin: auto;
-  }
-
-  .big-card-title {
-    width: 100%;
-    @extend %big-card-title-txt;
-    margin: 0 0 10px 0;
-  }
-
-  .big-card-txt {
-    width: 100%;
-    max-width: 270px;
-    @extend %big-card-text;
-  }
 }
 
+.problem-img-big-wrp {
+  width: 103px;
+  height: 103px;
+  display: flex;
+  border-radius: 50%;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 30px rgba(162, 162, 162, 0.25);
+  margin: 0 0 27px 0;
+}
+
+.problem-img-big-wrp img {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+}
+
+.big-card-title {
+  width: 100%;
+  @extend %big-card-title-txt;
+  margin: 0 0 10px 0;
+}
+
+.big-card-txt {
+  width: 100%;
+  max-width: 270px;
+  @extend %big-card-text;
+}
+
+
+.utopia-mission {
+  width: 100%;
+  margin: 0 0 80px 0;
+}
+
+.utopia-mission-title {
+  margin: 0 0 72px 0;
+}
+
+.utopia-mission-title-txt {
+  width: 100%;
+  @extend %section-title-txt;
+}
+
+.utopia-mission-info-row {
+  margin: 0 auto;
+}
+
+.utopia-mission-info-wrp {
+  width: 100%;
+  max-width: 394px;
+}
+
+.utopia-mission-info {
+  min-height: 480px;
+  padding: 0 0 0 190px;
+  // box-sizing: border-box;
+}
+
+.utopia-mission-info div {
+  height: 100%;
+}
+
+.mission-info-title {
+  @extend %big-card2-title-txt;
+  text-align: start;
+  margin: 0 0 25px 0;
+}
+
+.mission-info-txt {
+  @extend %big-card2-text;
+  text-align: start;
+  margin: 0 0 35px 0;
+}
+
+.utopia-mission-btn {
+  width: 100%;
+  max-width: 306px;
+  padding: 14px 0;
+  // @extend %download-btn-txt;
+  background: linear-gradient(98.8deg, #97BC5D 0.78%, #C0D997 98.41%);
+  box-shadow: 0px 10px 30px rgba(135, 182, 112, 0.3);
+  border-radius: 9px;
+  border-color: transparent;
+  transition: all .1s ease-in-out;
+}
+
+.utopia-mission-btn a {
+  @extend %download-btn-txt;
+}
+
+.utopia-mission-btn:hover {
+  filter: opacity(.85);
+}
+
+.utopia-mission-btn:active {
+  filter: opacity(1);
+  transform: scale(.95);
+}
+
+.mission-background {
+  width: 100%;
+  max-width: 776px;
+  background-image: url(../img/laptop.png);
+  background-repeat: no repeat;
+  background-size: cover;
+}
 
 
 
