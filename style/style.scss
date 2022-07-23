@@ -701,6 +701,68 @@ a {
   box-sizing: border-box;
 }
 
+.utopia-reviews {
+  width: 100%;
+}
+
+.utopia-s_technologies {
+  width: 100%;
+  max-width: 1320px;
+  min-height: 480px;
+  margin: 0 0 80px 120px;
+  border-radius: 35px;
+}
+
+.utopia-s_technologies-bcg {
+  width: 661px;
+  height: 480px;
+  border-radius: 35px;
+  background-image: url(../img/glass.png);
+  background-repeat: no-repeat;
+}
+
+.s_technologies-info {
+  width: 100%;
+  max-width: 838px;
+  min-height: 480px;
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 0 70px;
+  box-sizing: border-box;
+  background-image: url(../img/green-bcg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.s_technologies-info-title {
+  width: 100%;
+  max-width: 427px;
+  @include fontz(normal, 600, 30px, 39px, left, #FFFFFF);
+  margin: 0 0 25px 0;
+}
+
+.s_technologies-info-txt {
+  width: 100%;
+  max-width: 415px;
+  @extend %big-card-text;
+  margin: 0 0 35px 0;
+  text-align: left;
+}
+
+.white-btn {
+  background: #FFFFFF;
+  color: #3C3F34;
+}
+
+.white-btn a {
+  @extend %download-btn-txt;
+  color: #3C3F34;
+}
+
+
+
 
 
 
@@ -715,7 +777,8 @@ a {
 @media (min-width: 1200px) {
 
   .page-container {
-    max-width: 1224px;
+    max-width: 1200px;
+    padding: 0;
   }
 
 }
