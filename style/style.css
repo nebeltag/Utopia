@@ -34,7 +34,7 @@
   font-weight: 600;
   font-style: italic;
 }
-.utopia-mission-title-txt, .utopia-problem-title, .utopia_tools-title {
+.user-rating-title, .utopia-mission-title-txt, .utopia-problem-title, .utopia_tools-title {
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
@@ -95,7 +95,7 @@
   color: #3C3F34;
 }
 
-.s_technologies-info-txt, .big-card-txt, .tools-item-title {
+.big-card-txt, .tools-item-title {
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -104,7 +104,7 @@
   color: #FFFFFF;
 }
 
-.mission-info-txt {
+.s_technologies-info-txt, .mission-info-txt {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -514,12 +514,17 @@ a {
 .utopia-mission-btn {
   width: 100%;
   max-width: 306px;
-  padding: 14px 0;
   background: linear-gradient(98.8deg, #97BC5D 0.78%, #C0D997 98.41%);
   box-shadow: 0px 10px 30px rgba(135, 182, 112, 0.3);
   border-radius: 9px;
   border-color: transparent;
   transition: all 0.1s ease-in-out;
+}
+
+.utopia-mission-btn a {
+  display: block;
+  width: 100%;
+  padding: 14px 0;
 }
 
 .utopia-mission-btn:hover {
@@ -634,11 +639,13 @@ a {
 
 .utopia-reviews {
   width: 100%;
+  overflow: hidden;
+  margin: 0 0 140px 0;
 }
 
 .utopia-s_technologies {
   width: 100%;
-  max-width: 1320px;
+  max-width: 1380px;
   min-height: 480px;
   margin: 0 0 80px 120px;
   border-radius: 35px;
@@ -657,6 +664,7 @@ a {
   max-width: 838px;
   min-height: 480px;
   border-radius: 35px;
+  float: right;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -684,15 +692,150 @@ a {
   max-width: 415px;
   margin: 0 0 35px 0;
   text-align: left;
+  color: #FFFFFF;
 }
 
 .white-btn {
   background: #FFFFFF;
-  color: #3C3F34;
+  transition: all 0.4s ease-out;
 }
 
 .white-btn a {
   color: #3C3F34;
+  transition: all 0.4s ease-out;
+}
+
+.white-btn:hover {
+  background: linear-gradient(98.8deg, #97BC5D 0.78%, #C0D997 98.41%);
+  outline: 1px solid #FFFFFF;
+}
+
+.white-btn a:hover {
+  color: #FFFFFF;
+}
+
+.white-btn:active {
+  background: #FFFFFF;
+  outline: none;
+}
+
+.white-btn a:active {
+  color: #3C3F34;
+}
+
+.accessibility {
+  max-width: 1320px;
+  margin-bottom: 142px;
+}
+
+.accessibility-bcg {
+  width: 100%;
+  max-width: 776px;
+  background-image: url(../img/man.png);
+  background-repeat: no-repeat;
+  float: right;
+  border-radius: 35px 0 0 35px;
+}
+
+.accessibility-info {
+  float: none;
+  display: block;
+}
+
+.accessibility-info-wrp {
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.user-rating-title {
+  width: 100%;
+  margin: 0 0 70px 0;
+}
+
+.rating-item {
+  min-height: 244px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #F7F8F3;
+  border-radius: 25px;
+  padding: 32px 0 0 0;
+  box-sizing: border-box;
+}
+
+.trustpilot-img {
+  display: block;
+  margin: 0 0 27px 0;
+}
+
+.rating-item-line {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  height: 1px;
+  background-color: #D9D9D9;
+  margin: 0 0 35px 0;
+}
+
+.rating-stars {
+  width: 100%;
+  max-width: 295px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sprite1 {
+  background-image: url(../img/sprite1.png);
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.sprite1-green-star {
+  width: 35px;
+  height: 32px;
+  background-position: 0 0;
+}
+
+.sprite1-green-star {
+  width: 35px;
+  height: 32px;
+  background-position: -35px 0;
+}
+
+.sprite1-green-star {
+  width: 35px;
+  height: 32px;
+  background-position: -70px 0;
+}
+
+.sprite1-green-star {
+  width: 35px;
+  height: 32px;
+  background-position: -105px 0;
+}
+
+.sprite1-grey-star {
+  width: 35px;
+  height: 32px;
+  background-position: -140px 0;
+}
+
+.macupdate {
+  padding: 45px 0 0 0;
+}
+
+.macupdate-img {
+  margin: 0 0 40px 0;
+}
+
+.softpedia {
+  padding: 50px 0 0 0;
+}
+
+.softpedia-img {
+  margin: 0 0 45px 0;
 }
 
 @media (min-width: 1200px) {
