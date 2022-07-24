@@ -303,7 +303,7 @@ a {
   margin: 0 0 140px 0;
   padding: 86px 0 0 0;
   position: relative;
-  background-image: url(/img/half-circles.png);
+  background-image: url(../img/half-circles.png);
   background-repeat: no-repeat;
   background-position: right;
   background-position-y: 139px;
@@ -314,7 +314,7 @@ a {
   display: block;
   width: 148px;
   height: 266px;
-  background-image: url(/img/dots.png);
+  background-image: url(../img/dots.png);
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -542,23 +542,30 @@ a {
   @extend %section-title-txt;
 }
 
-.utopia-mission-info-row {
-  margin: 0 auto;
+.utopia-mission-info {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 0 0 auto;
 }
 
-.utopia-mission-info-wrp {
+
+
+.mission-info-box {
+  width: 100%;
+  max-width: 661px;
+  min-height: 480px;
+  padding: 0 0 0 70px;
+  box-sizing: border-box;
+  border-radius: 35px;
+}
+
+.mission-content {
   width: 100%;
   max-width: 394px;
-}
-
-.utopia-mission-info {
   min-height: 480px;
-  padding: 0 0 0 190px;
-  // box-sizing: border-box;
-}
-
-.utopia-mission-info div {
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .mission-info-title {
@@ -605,21 +612,43 @@ a {
 .mission-background {
   width: 100%;
   max-width: 776px;
+  min-height: 480px;
   background-image: url(../img/laptop.png);
-  background-repeat: no repeat;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+  float: right;
+}
+
+.comunity-section {
+  width: 100%;
+  position: relative;
 }
 
 .utopia-comunity {
   width: 100%;
+  max-width: 1320px;
   min-height: 480px;
-  display: flex;
-  justify-content: flex-end;
   position: relative;
-  // margin: 0 0 166px 0;
+  margin: 0 0 160px auto;
 }
 
-.utopia-comunity::before {
+.utopia-comunity-info {
+  width: 100%;
+  max-width: 776px;
+  min-height: 480px;
+  float: right;
+}
+
+.comunity-info-wrp {
+  width: 100%;
+  max-width: 394px;
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.comunity-section::before {
   content: "";
   display: block;
   width: 360px;
@@ -627,19 +656,18 @@ a {
   background-image: url(../img/big-circles-left.png);
   position: absolute;
   left: 0;
-  top: -367px;
+  top: -380px;
   z-index: -1;
 }
 
 
 .comunity-background {
   width: 100%;
-  max-width: 1320px;
+  max-width: 661px;
   min-height: 480px;
-  display: flex;
-  justify-content: flex-end;
   border-radius: 35px;
   background-image: url(../img/two_girls.png);
+  background-repeat: no-repeat;
   margin: 0 0 146px 0;
 }
 
@@ -670,6 +698,12 @@ a {
 
 .comunity-item {
   padding: 0 50px 0 0;
+}
+
+.btn-wrp {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .circle-box {
@@ -714,10 +748,10 @@ a {
 
 .utopia-s_technologies {
   width: 100%;
-  max-width: 1380px;
+  max-width: 1320px;
   min-height: 480px;
   margin: 0 0 80px 120px;
-  border-radius: 35px;
+  border-radius: 35px 0 0 35px;
 }
 
 .utopia-s_technologies-bcg {
@@ -730,9 +764,9 @@ a {
 
 .s_technologies-info {
   width: 100%;
-  max-width: 838px;
+  max-width: 776px;
   min-height: 480px;
-  border-radius: 35px;
+  border-radius: 35px 0 0 35px;
   float: right;
   display: flex;
   flex-direction: column;
@@ -809,8 +843,10 @@ a {
   display: block;
 }
 
+
 .accessibility-info-wrp {
   min-height: 480px;
+  max-width: 380px;
   display: flex;
   flex-direction: column;
   justify-content: center;
