@@ -60,6 +60,7 @@
 %download-btn {
   width: 100%;
   max-width: 306px;
+  display: block;
   padding: 14px 0;
   // @extend %download-btn-txt;
   background: linear-gradient(98.8deg, #97BC5D 0.78%, #C0D997 98.41%);
@@ -76,6 +77,7 @@
   font-size: 16px;
   line-height: 22px;
   color: #FFFFFF;
+  text-align: center;
 }
 
 %card-title-txt {
@@ -203,11 +205,16 @@ a {
   margin: 0 auto;
 }
 
-#menuLink {
+.menu-link {
   @include fontz(normal, 500, 17px, 23px, center, #3C3F34);
   padding: 4px 6px;
   border-bottom: 2px solid transparent;
   transition: all .1s ease-in-out;
+}
+
+#menu_link {
+  color: rgba(0, 0, 0, .55);
+  ;
 }
 
 .page-button {
@@ -219,19 +226,20 @@ a {
 }
 
 
-#menuLink:hover {
+.menu-link:hover {
   border-bottom: 2px solid #87B670;
   color: #87B670;
 }
 
-#menuLink:active {
+.menu-link:active {
   color: #3C3F34;
   transform: scale(.95);
 }
 
-#menuLink:focus {
+.menu-link:focus {
   border-bottom: 2px solid #87B670;
 }
+
 
 .body-container {
   width: 100%;
@@ -278,6 +286,7 @@ a {
   width: 100%;
   max-width: 223px;
   padding: 14px 0;
+  display: block;
   // @extend %download-btn-txt;
   background: linear-gradient(98.8deg, #97BC5D 0.78%, #C0D997 98.41%);
   box-shadow: 0px 10px 30px rgba(135, 182, 112, 0.3);
@@ -286,7 +295,9 @@ a {
   transition: all .1s ease-in-out;
 }
 
-.banner-btn a {
+.banner-btn span {
+  width: 100%;
+  display: block;
   @extend %download-btn-txt;
 }
 
@@ -383,18 +394,12 @@ a {
 }
 
 .utopia-tools-btn {
-  width: 100%;
-  max-width: 306px;
-  padding: 14px 0;
-  // @extend %download-btn-txt;
-  background: linear-gradient(98.8deg, #97BC5D 0.78%, #C0D997 98.41%);
-  box-shadow: 0px 10px 30px rgba(135, 182, 112, 0.3);
-  border-radius: 9px;
-  border-color: transparent;
-  transition: all .1s ease-in-out;
+  @extend %download-btn;
 }
 
-.utopia-tools-btn a {
+.utopia-tools-btn span {
+  width: 100%;
+  display: block;
   @extend %download-btn-txt;
 }
 
@@ -424,7 +429,8 @@ a {
 
 .problem-list {
   position: relative;
-  padding: 0 .75rem;
+  // padding: 0 .75rem;
+  margin: 0;
 }
 
 .problem-card {
@@ -490,7 +496,7 @@ a {
   display: flex;
   position: absolute;
   top: -64px;
-  left: 369px;
+  left: 29.5%;
   flex-direction: column;
   align-items: center;
   padding: 42px 0;
@@ -545,7 +551,8 @@ a {
 .utopia-mission-info {
   width: 100%;
   max-width: 1320px;
-  margin: 0 0 0 auto;
+  float: right;
+  // margin: 0 0 0 auto;
 }
 
 
@@ -581,22 +588,14 @@ a {
 }
 
 .utopia-mission-btn {
-  width: 100%;
-  max-width: 306px;
-  // padding: 14px 0;
-  // @extend %download-btn-txt;
-  background: linear-gradient(98.8deg, #97BC5D 0.78%, #C0D997 98.41%);
-  box-shadow: 0px 10px 30px rgba(135, 182, 112, 0.3);
-  border-radius: 9px;
-  border-color: transparent;
-  transition: all .1s ease-in-out;
+  @extend %download-btn;
+
 }
 
-.utopia-mission-btn a {
+.utopia-mission-btn span {
   @extend %download-btn-txt;
   display: block;
   width: 100%;
-  padding: 14px 0;
 
 }
 
@@ -619,6 +618,10 @@ a {
   float: right;
 }
 
+.clear_block {
+  clear: both;
+}
+
 .comunity-section {
   width: 100%;
   position: relative;
@@ -628,8 +631,9 @@ a {
   width: 100%;
   max-width: 1320px;
   min-height: 480px;
+  float: right;
   position: relative;
-  margin: 0 0 160px auto;
+  margin: 0 0 160px 0;
 }
 
 .utopia-comunity-info {
@@ -668,7 +672,7 @@ a {
   border-radius: 35px;
   background-image: url(../img/two_girls.png);
   background-repeat: no-repeat;
-  margin: 0 0 146px 0;
+  // margin: 0 0 146px 0;
 }
 
 .utopia-comunity-info {
@@ -750,7 +754,8 @@ a {
   width: 100%;
   max-width: 1320px;
   min-height: 480px;
-  margin: 0 0 80px 120px;
+  float: right;
+  margin: 0 0 80px 0;
   border-radius: 35px 0 0 35px;
 }
 
@@ -798,10 +803,13 @@ a {
   background: #FFFFFF;
   // color: #3C3F34;
   transition: all 0.3s ease-out;
+  padding: 0;
 }
 
-.white-btn a {
+.white-btn span {
   @extend %download-btn-txt;
+  display: block;
+  padding: 14px 0;
   color: #3C3F34;
   transition: all 0.3s ease-out;
 }
@@ -811,7 +819,7 @@ a {
   outline: 1px solid #FFFFFF;
 }
 
-.white-btn a:hover {
+.white-btn span:hover {
   color: #FFFFFF;
 }
 
@@ -826,7 +834,8 @@ a {
 
 .accessibility {
   max-width: 1320px;
-  margin-bottom: 142px;
+  // float: right;
+  margin: 0 0 142px 0;
 }
 
 .accessibility-bcg {
